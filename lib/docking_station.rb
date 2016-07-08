@@ -1,11 +1,10 @@
 require_relative 'bike'
 
 class DockingStation
-
+    DEFAULT_CAPACITY = 20
 def initialize
   @capacity = []
 end
-
 
 def release_bike
   fail 'No bikes available' if empty?
@@ -26,7 +25,7 @@ def empty?
 end
 
 def full?
-  @capacity.count >= 20
+  @capacity.count >= DEFAULT_CAPACITY
 end
 
 end
