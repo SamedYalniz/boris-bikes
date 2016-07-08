@@ -34,7 +34,7 @@ describe Docking_station do
   end
 
   describe "#dock" do
-    it "raises an error when a docking station is full" do
+    it "raises an error when a docking station is full(over 20))" do
       subject.dock(Bike.new)
       subject.dock(Bike.new)
       subject.dock(Bike.new)
